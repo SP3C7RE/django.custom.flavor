@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>USERS</title>
+  </head>
+  <body>
+    <h1>REGISTERED USERS</h1>
+      {% for user in allUsers %}
+      <ul>
+        <li>USER DATA</li>
+          <ul>
+            <li>{{ user.firstName }}</li>
+            <li>{{ user.lastName }}</li>
+            <li>{{ user.email }}</li>
+          </ul>
+      </ul>
+      {% endfor %}
+  </body>
+</html>
